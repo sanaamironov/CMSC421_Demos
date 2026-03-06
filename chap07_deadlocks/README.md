@@ -1,19 +1,20 @@
+# Chapter 7 — Deadlocks
 
-# Chapter 07 — Deadlocks
+Deadlocks are hard to trigger cleanly in a safe and portable way from user space, so this chapter
+mixes **one live deadlock example** with **simulation programs**.
 
-## Purpose
-Demonstrate core operating system concepts from this chapter.
+## Learning Goals
+
+Students should be able to:
+
+- state the four necessary conditions for deadlock
+- distinguish safe and unsafe states
+- trace a basic resource-allocation scenario
+- compute a Need matrix
+- explain how the Banker's Algorithm checks safety
 
 ## Demos
-Example programs illustrating the concept.
 
-## Build
-make
-
-## Run
-./demo_name
-
-## What Students Should Observe
-- System behavior
-- Process or thread activity
-- OS interactions
+1. `01_deadlock_conditions.md` — concept summary for lecture
+2. `02_deadlock_detection_sim.c` — single-instance detection style simulation
+3. `03_bankers_algorithm_sim.c` — safety check for a multi-instance resource snapshot
